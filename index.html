@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07172e">
+  <meta name="description" content="BOT CENTER — متجر البوتات الذكية للتداول على MT5. استعرض 20 روبوت تداول مع التفاصيل والأسعار وخيارات التنصيب.">
+  <title>BOT CENTER | متجر البوتات الذكية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="live-dot"></span> متجر BOT CENTER الرسمي <span class="announcement-sep">•</span> 20 روبوت تداول متاحاً للاستعراض والطلب</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BOT CENTER الصفحة الرئيسية">
+      <span class="brand-mark"><span class="brand-orbit"></span><span class="brand-bot">BC</span></span>
+      <span class="brand-copy"><strong>BOT <em>CENTER</em></strong><small>SMART TRADING SYSTEMS</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="active">الرئيسية</a>
+      <a href="#bots">مكتبة البوتات</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="header-cta" href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">اطلب الآن <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> وجهتك لأنظمة التداول الآلي</div>
+        <h1>تداول أذكى.<br><span>تحكّم أكبر.</span></h1>
+        <p class="hero-lead">اكتشف مكتبة BOT CENTER من روبوتات التداول المصممة لاستراتيجيات وأساليب مختلفة على منصة MetaTrader 5.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#bots">استكشف البوتات <span>←</span></a>
+          <a class="btn btn-ghost" href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">تواصل مع الدعم</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>20</strong><span>روبوت متاح</span></div>
+          <i></i><div><strong>MT5</strong><span>منصة التداول</span></div>
+          <i></i><div><strong>1:1</strong><span>دعم ومتابعة</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="مجموعة من منتجات BOT CENTER">
+        <div class="hero-glow"></div>
+        <div class="hero-card hero-card-back"><img src="assets/sonic.jpeg" alt="Robot Sonic"></div>
+        <div class="hero-card hero-card-front"><img src="assets/royal.jpeg" alt="Royal Robot"></div>
+        <div class="floating-chip chip-top"><span class="chip-icon">✦</span><span><b>BOT CENTER</b><small>TRADING AUTOMATION</small></span></div>
+        <div class="floating-chip chip-bottom"><span class="pulse-bars">▂ ▄ ▆ ▇</span><span><b>20 ROBOTS</b><small>ONE SMART LIBRARY</small></span></div>
+      </div>
+      <div class="hero-bottom-line"><span>01 / 04</span><span class="line"></span><span>BOT CENTER COLLECTION</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span class="trust-icon">◈</span><span><b>تنصيب على الحاسوب</b><small>إعداد وتشغيل ومساعدة</small></span></div>
+      <div><span class="trust-icon">⌁</span><span><b>تنصيب للموبايل</b><small>حلول تشغيل عبر السيرفر</small></span></div>
+      <div><span class="trust-icon">◎</span><span><b>إرشادات الاستخدام</b><small>إعدادات وتعليمات واضحة</small></span></div>
+      <div><span class="trust-icon">✧</span><span><b>دعم مباشر</b><small>تواصل مع فريق BOT CENTER</small></span></div>
+    </section>
+
+    <section class="section bots-section" id="bots">
+      <div class="section-heading">
+        <div><div class="eyebrow dark"><span></span> EXPLORE THE LIBRARY</div><h2>مكتبة <span>البوتات</span></h2><p>اختَر النظام الأقرب لأسلوبك، واطّلع على تفاصيله وأسعار التنصيب.</p></div>
+        <div class="catalog-count"><strong id="resultCount">20</strong><span>منتجاً في المكتبة</span></div>
+      </div>
+      <div class="catalog-toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن اسم البوت..." autocomplete="off"><kbd>⌘ K</kbd></label>
+        <div class="filter-wrap">
+          <label class="sr-only" for="strategyFilter">تصفية حسب الاستراتيجية</label>
+          <select id="strategyFilter"><option value="all">كل الاستراتيجيات</option><option value="سكالبينغ">سكالبينغ</option><option value="سوينغ">سوينغ</option><option value="أوامر معلقة">أوامر معلقة</option><option value="تداول الأخبار">تداول الأخبار</option><option value="سكالبينغ وتعزيز">سكالبينغ وتعزيز</option><option value="سكالبينغ VIP">سكالبينغ VIP</option></select>
+          <span class="select-arrow">⌄</span>
+        </div>
+        <div class="filter-wrap">
+          <label class="sr-only" for="capitalFilter">تصفية حسب رأس المال</label>
+          <select id="capitalFilter"><option value="all">كل رؤوس الأموال</option><option value="under200">حتى 200$</option><option value="200-400">200–400$</option><option value="400-800">400–800$</option><option value="over800">أكثر من 800$</option><option value="cent">حسابات السنت</option></select>
+          <span class="select-arrow">⌄</span>
+        </div>
+      </div>
+      <div class="quick-filters" id="quickFilters">
+        <button class="quick-filter selected" data-filter="all">الكل <span>20</span></button>
+        <button class="quick-filter" data-filter="سكالبينغ">سكالبينغ</button>
+        <button class="quick-filter" data-filter="سوينغ">سوينغ</button>
+        <button class="quick-filter" data-filter="تداول الأخبار">الأخبار</button>
+        <button class="quick-filter" data-filter="cent">حسابات السنت</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>ما لقينا نتائج مطابقة</h3><p>جرّب تغيّر كلمة البحث أو خيارات التصفية.</p><button class="btn btn-primary" id="resetFilters">عرض كل البوتات</button></div>
+      <div class="catalog-footnote">الأسعار بالدولار الأمريكي وتشمل البوت والتنصيب حسب الخيار المحدد. قد تختلف الإعدادات المناسبة حسب الحساب وشركة الوساطة.</div>
+    </section>
+
+    <section class="feature-band" id="services">
+      <div class="feature-copy"><div class="eyebrow"><span></span> MORE THAN A ROBOT</div><h2>مو بس بوت...<br><span>منظومة تشغيل متكاملة.</span></h2><p>مع كل طلب، تحصل على ملفات البوت وإعداداته المناسبة وإرشادات التشغيل، مع خيارات التنصيب على الحاسوب أو الموبايل عبر السيرفر.</p><a class="btn btn-light" href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">تحدث مع فريقنا <span>↗</span></a></div>
+      <div class="feature-list">
+        <article><b>01</b><div><h3>تنصيب الحاسوب</h3><p>تجهيز البوت وربطه بمنصة MT5 وإعداد التشغيل.</p></div><span>↗</span></article>
+        <article><b>02</b><div><h3>تشغيل الموبايل</h3><p>تنصيب كامل عبر السيرفر مع إرشادات الوصول والمتابعة.</p></div><span>↗</span></article>
+        <article><b>03</b><div><h3>إعدادات وتعليمات</h3><p>استلام الإعدادات المناسبة ودليل الاستخدام وأوقات التشغيل المقترحة.</p></div><span>↗</span></article>
+        <article><b>04</b><div><h3>دعم ومتابعة</h3><p>فريق الدعم متاح للإجابة عن استفساراتك قبل وبعد الطلب.</p></div><span>↗</span></article>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="section-heading centered"><div class="eyebrow dark"><span></span> HOW IT WORKS</div><h2>خطوات الطلب <span>ببساطة</span></h2><p>من اختيار البوت إلى استلامه وتجهيزه.</p></div>
+      <div class="process-grid">
+        <div class="process-step"><span class="step-no">01</span><div class="step-symbol">⌕</div><h3>اختَر البوت</h3><p>استعرض المكتبة وتعرّف على الاستراتيجية والمواصفات.</p></div>
+        <div class="process-step"><span class="step-no">02</span><div class="step-symbol">◉</div><h3>تواصل ويانه</h3><p>أرسل طلبك للدعم وحدد نوع التنصيب المناسب.</p></div>
+        <div class="process-step"><span class="step-no">03</span><div class="step-symbol">⚙</div><h3>التجهيز والتنصيب</h3><p>يتم تجهيز الملفات والإعدادات وتنصيب النظام.</p></div>
+        <div class="process-step"><span class="step-no">04</span><div class="step-symbol">✧</div><h3>استلام الإرشادات</h3><p>تستلم التعليمات وأوقات التشغيل المقترحة والهدف اليومي.</p></div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="section-heading"><div><div class="eyebrow dark"><span></span> NEED TO KNOW</div><h2>الأسئلة <span>الشائعة</span></h2><p>إجابات مختصرة عن الطلب والتنصيب.</p></div></div>
+      <div class="faq-list">
+        <details><summary>هل البوتات تعمل على منصة MT5؟ <span>＋</span></summary><p>المنتجات المعروضة موضح ضمن تفاصيلها أنها تعمل على MT5، مع مراعاة أي ملاحظة خاصة بكل منتج.</p></details>
+        <details><summary>هل يمكن تشغيل البوت على الموبايل أو الآيباد؟ <span>＋</span></summary><p>يتوفر خيار تنصيب الموبايل عبر السيرفر. تواصل مع الدعم للتأكد من متطلبات جهازك وطريقة الوصول قبل الطلب.</p></details>
+        <details><summary>شنو يشمل سعر البوت؟ <span>＋</span></summary><p>يشمل البوت مع التنصيب حسب الخيار، والإعدادات المناسبة، وتعليمات الاستخدام، وأوقات التشغيل المقترحة، والهدف اليومي. بعض المنتجات تتضمن إرشادات إضافية موضحة بصفحتها.</p></details>
+        <details><summary>هل الأرباح مضمونة؟ <span>＋</span></summary><p>لا. التداول في الأسواق المالية ينطوي على مخاطر وقد يؤدي إلى خسارة رأس المال. النتائج السابقة أو الاختبارات لا تضمن نتائج مستقبلية، ويجب اختيار رأس مال وإعدادات تناسب قدرتك على تحمل المخاطر.</p></details>
+        <details><summary>شلون أطلب بوت؟ <span>＋</span></summary><p>افتح تفاصيل البوت واضغط «اطلب عبر تيليغرام» حتى تنتقل إلى فريق الدعم وتكمل إجراءات الطلب.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-orb"></div><div class="contact-content"><div class="eyebrow"><span></span> LET'S TALK</div><h2>جاهز تختار<br><span>نظامك القادم؟</span></h2><p>إذا محتار بين أكثر من بوت أو تحتاج تعرف الأنسب لحسابك، فريق BOT CENTER يساعدك بالتفاصيل قبل الطلب.</p><a class="btn btn-primary" href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">تواصل مع الدعم <span>↗</span></a></div>
+      <div class="contact-card"><div class="contact-card-top"><span class="brand-mark small"><span class="brand-orbit"></span><span class="brand-bot">BC</span></span><span>BOT CENTER / SUPPORT</span></div><h3>خلّينا نبدأ<br>المحادثة.</h3><a href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">@Bot_SupportFX <span>↗</span></a><div class="contact-card-bottom">SUPPORT • INSTALLATION • GUIDANCE</div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark"><span class="brand-orbit"></span><span class="brand-bot">BC</span></span><span class="brand-copy"><strong>BOT <em>CENTER</em></strong><small>SMART TRADING SYSTEMS</small></span></a>
+    <p>حلول تداول آلي وإرشادات تشغيل عبر منصة MT5.</p>
+    <div class="footer-links"><a href="https://t.me/BotSTORFX" target="_blank" rel="noopener">قناة المنتجات</a><a href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">الدعم الفني</a><a href="#bots">مكتبة البوتات</a></div>
+    <small class="copyright">© <span id="year"></span> BOT CENTER. جميع الحقوق محفوظة.</small>
+  </footer>
+
+  <div class="modal-backdrop" id="productModal" aria-hidden="true">
+    <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+      <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+      <div class="modal-content">
+        <div class="modal-kicker"><span class="platform-pill">MT5</span><span id="modalStrategy"></span></div>
+        <h2 id="modalTitle"></h2><p class="modal-subtitle" id="modalSubtitle"></p>
+        <div class="modal-capital"><span>رأس المال المناسب حسب معلومات المنتج</span><strong id="modalCapital"></strong></div>
+        <p class="modal-entry" id="modalEntry"></p>
+        <h3>المميزات والتفاصيل</h3><ul id="modalFeatures"></ul>
+        <div class="modal-lot" id="modalLot"></div>
+        <div class="modal-prices">
+          <div><small>تنصيب الحاسوب</small><strong id="modalPc"></strong></div>
+          <div><small>تنصيب الموبايل</small><strong id="modalMobile"></strong></div>
+        </div>
+        <div class="modal-included" id="modalIncluded"></div>
+        <div class="modal-actions"><a id="modalOrder" class="btn btn-primary" href="#" target="_blank" rel="noopener">اطلب هذا البوت عبر تيليغرام <span>↗</span></a><a id="modalVideo" class="btn btn-ghost dark-ghost" href="#" target="_blank" rel="noopener" hidden>مشاهدة البوت</a></div>
+        <p class="modal-disclaimer">التداول ينطوي على مخاطر. رأس المال المناسب المذكور إرشادي وليس ضماناً للنتائج.</p>
+      </div>
+    </div>
+  </div>
+  <a class="floating-support" href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener" aria-label="تواصل مع الدعم">✆</a>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
