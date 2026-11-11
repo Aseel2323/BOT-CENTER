@@ -9,10 +9,10 @@ const modal = document.getElementById("productModal");
 let quickStrategy = "all";
 
 const money = n => `$${Number(n).toLocaleString("en-US")}`;
-function productOrderLink(p) 
+function productOrderLink(p) {
   const msg = `السلام عليكم ورحمة الله وبركاته 🌟
 
-أرغب بطلب وتنصيب أحد روبوتات التداول الآلي من BOT CENTER، وأرجو تزويدي بتفاصيل إكمال إجراءات الطلب والتنصيب.
+أرغب بطلب وتنصيب أحد روبوتات التداول الآلي من BOT CENTER.
 
 🤖 اسم البوت: ${p.name}
 
@@ -23,6 +23,9 @@ function productOrderLink(p)
 شكراً لجهودكم وثقتنا بخدماتكم 🌐
 
 BOT CENTER | Smart Trading Systems 🔷`;
+
+  return `https://t.me/Bot_SupportFX?text=${encodeURIComponent(msg)}`;
+}
   return `https://t.me/Bot_SupportFX?text=${encodeURIComponent(msg)}`;
 } {
   const msg = `السلام عليكم، أريد تفاصيل وطلب بوت ${p.name}.\\nتنصيب الحاسوب: ${money(p.pc)}\\nتنصيب الموبايل: ${money(p.mobile)}`;
