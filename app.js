@@ -9,7 +9,7 @@ const modal = document.getElementById("productModal");
 let quickStrategy = "all";
 
 const money = n => `$${Number(n).toLocaleString("en-US")}`;
-function productOrderLink(p) {
+function productOrderLink(p) 
   const msg = `السلام عليكم ورحمة الله وبركاته 🌟
 
 أرغب بطلب وتنصيب أحد روبوتات التداول الآلي من BOT CENTER، وأرجو تزويدي بتفاصيل إكمال إجراءات الطلب والتنصيب.
