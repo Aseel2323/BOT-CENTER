@@ -27,10 +27,7 @@ BOT CENTER | Smart Trading Systems 🔷`;
   return `https://t.me/Bot_SupportFX?text=${encodeURIComponent(msg)}`;
 }
   return `https://t.me/Bot_SupportFX?text=${encodeURIComponent(msg)}`;
-} {
-  const msg = `السلام عليكم، أريد تفاصيل وطلب بوت ${p.name}.\\nتنصيب الحاسوب: ${money(p.pc)}\\nتنصيب الموبايل: ${money(p.mobile)}`;
-  https://t.me/Bot_SupportFX
-}
+
 function card(p, index) {
   return `<article class="product-card">
     <div class="product-image" data-open="${p.id}">
