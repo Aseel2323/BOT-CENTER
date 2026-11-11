@@ -11,7 +11,7 @@ let quickStrategy = "all";
 const money = n => `$${Number(n).toLocaleString("en-US")}`;
 function productOrderLink(p) {
   const msg = `السلام عليكم، أريد تفاصيل وطلب بوت ${p.name}.\\nتنصيب الحاسوب: ${money(p.pc)}\\nتنصيب الموبايل: ${money(p.mobile)}`;
-  return `https://t.me/Bot_SupportFX?text=${encodeURIComponent(msg)}`;
+  https://t.me/Bot_SupportFX
 }
 function card(p, index) {
   return `<article class="product-card">
