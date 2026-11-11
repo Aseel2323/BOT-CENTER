@@ -16,7 +16,7 @@ function productOrderLink(p) {
 function card(p, index) {
   return `<article class="product-card">
     <div class="product-image" data-open="${p.id}">
-      <img src="assets/${p.image}" alt="${p.name}" loading="lazy">
+      <img src="./${p.image}" alt="${p.name}" loading="lazy">
       <span class="product-platform">${p.platform.includes("MT5") ? "MT5" : p.platform}</span>
       <span class="product-number">${String(index+1).padStart(2,"0")}</span>
     </div>
@@ -54,7 +54,7 @@ function render() {
 function openProduct(id) {
   const p = products.find(x => x.id === id);
   if (!p) return;
-  document.getElementById("modalImage").src = `assets/${p.image}`;
+  document.getElementById("modalImage").src = `./${p.image}`;
   document.getElementById("modalImage").alt = p.name;
   document.getElementById("modalStrategy").textContent = p.strategy;
   document.getElementById("modalTitle").textContent = p.name;

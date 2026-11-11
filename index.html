@@ -15,7 +15,7 @@
   <div class="announcement"><span class="live-dot"></span> متجر BOT CENTER الرسمي <span class="announcement-sep">•</span> 20 روبوت تداول متاحاً للاستعراض والطلب</div>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="BOT CENTER الصفحة الرئيسية">
-      <span class="brand-mark"><span class="brand-orbit"></span><span class="brand-bot">BC</span></span>
+      <span class="brand-mark"><img class="brand-avatar" src="./bot-center-brand.jpg" alt="BOT CENTER"></span>
       <span class="brand-copy"><strong>BOT <em>CENTER</em></strong><small>SMART TRADING SYSTEMS</small></span>
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
@@ -48,8 +48,8 @@
       </div>
       <div class="hero-visual" aria-label="مجموعة من منتجات BOT CENTER">
         <div class="hero-glow"></div>
-        <div class="hero-card hero-card-back"><img src="assets/sonic.jpeg" alt="Robot Sonic"></div>
-        <div class="hero-card hero-card-front"><img src="assets/royal.jpeg" alt="Royal Robot"></div>
+        <div class="hero-card hero-card-back"><img src="./sonic.jpeg" alt="Robot Sonic"></div>
+        <div class="hero-card hero-card-front"><img src="./royal.jpeg" alt="Royal Robot"></div>
         <div class="floating-chip chip-top"><span class="chip-icon">✦</span><span><b>BOT CENTER</b><small>TRADING AUTOMATION</small></span></div>
         <div class="floating-chip chip-bottom"><span class="pulse-bars">▂ ▄ ▆ ▇</span><span><b>20 ROBOTS</b><small>ONE SMART LIBRARY</small></span></div>
       </div>
@@ -126,14 +126,14 @@
 
     <section class="contact-section" id="contact">
       <div class="contact-orb"></div><div class="contact-content"><div class="eyebrow"><span></span> LET'S TALK</div><h2>جاهز تختار<br><span>نظامك القادم؟</span></h2><p>إذا محتار بين أكثر من بوت أو تحتاج تعرف الأنسب لحسابك، فريق BOT CENTER يساعدك بالتفاصيل قبل الطلب.</p><a class="btn btn-primary" href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">تواصل مع الدعم <span>↗</span></a></div>
-      <div class="contact-card"><div class="contact-card-top"><span class="brand-mark small"><span class="brand-orbit"></span><span class="brand-bot">BC</span></span><span>BOT CENTER / SUPPORT</span></div><h3>خلّينا نبدأ<br>المحادثة.</h3><a href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">@Bot_SupportFX <span>↗</span></a><div class="contact-card-bottom">SUPPORT • INSTALLATION • GUIDANCE</div></div>
+      <div class="contact-card"><div class="contact-card-top"><span class="brand-mark small"><img class="brand-avatar" src="./bot-center-brand.jpg" alt="BOT CENTER"></span><span>BOT CENTER / SUPPORT</span></div><h3>خلّينا نبدأ<br>المحادثة.</h3><a href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">@Bot_SupportFX <span>↗</span></a><div class="contact-card-bottom">SUPPORT • INSTALLATION • GUIDANCE</div></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand footer-brand" href="#home"><span class="brand-mark"><span class="brand-orbit"></span><span class="brand-bot">BC</span></span><span class="brand-copy"><strong>BOT <em>CENTER</em></strong><small>SMART TRADING SYSTEMS</small></span></a>
+    <a class="brand footer-brand" href="#home"><span class="brand-mark"><img class="brand-avatar" src="./bot-center-brand.jpg" alt="BOT CENTER"></span><span class="brand-copy"><strong>BOT <em>CENTER</em></strong><small>SMART TRADING SYSTEMS</small></span></a>
     <p>حلول تداول آلي وإرشادات تشغيل عبر منصة MT5.</p>
-    <div class="footer-links"><a href="https://t.me/BotSTORFX" target="_blank" rel="noopener">قناة المنتجات</a><a href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">الدعم الفني</a><a href="#bots">مكتبة البوتات</a></div>
+    <div class="footer-links"><a href="https://t.me/BotSTORFX" target="_blank" rel="noopener">قناة المنتجات</a><a href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener">الدعم الفني</a><a href="#bots">مكتبة البوتات</a><a href="admin.html">إدارة المتجر</a></div>
     <small class="copyright">© <span id="year"></span> BOT CENTER. جميع الحقوق محفوظة.</small>
   </footer>
 
@@ -153,12 +153,35 @@
           <div><small>تنصيب الموبايل</small><strong id="modalMobile"></strong></div>
         </div>
         <div class="modal-included" id="modalIncluded"></div>
-        <div class="modal-actions"><a id="modalOrder" class="btn btn-primary" href="#" target="_blank" rel="noopener">اطلب هذا البوت عبر تيليغرام <span>↗</span></a><a id="modalVideo" class="btn btn-ghost dark-ghost" href="#" target="_blank" rel="noopener" hidden>مشاهدة البوت</a></div>
+        <div class="modal-actions"><button id="modalOrder" class="btn btn-primary" type="button">اطلب هذا البوت <span>←</span></button><a id="modalVideo" class="btn btn-ghost dark-ghost" href="#" target="_blank" rel="noopener" hidden>مشاهدة البوت</a></div>
         <p class="modal-disclaimer">التداول ينطوي على مخاطر. رأس المال المناسب المذكور إرشادي وليس ضماناً للنتائج.</p>
       </div>
     </div>
   </div>
+
+  <div class="modal-backdrop" id="orderModal" aria-hidden="true">
+    <div class="product-modal order-modal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+      <button class="modal-close" id="orderClose" aria-label="إغلاق">×</button>
+      <div class="modal-content">
+        <div class="modal-kicker"><span class="platform-pill">BOT CENTER</span><span>NEW ORDER</span></div>
+        <h2 id="orderTitle">إكمال طلبك</h2>
+        <p class="modal-subtitle" id="orderProductName"></p>
+        <form id="customerOrderForm" class="customer-order-form">
+          <label>الاسم الكامل<input id="customerName" required maxlength="100" placeholder="اسمك"></label>
+          <label>رقم الهاتف أو يوزر تيليغرام<input id="customerContact" required maxlength="100" placeholder="@username أو رقم الهاتف"></label>
+          <label>نوع التنصيب<select id="installType"><option value="computer">تنصيب الحاسوب</option><option value="mobile">تنصيب الموبايل</option></select></label>
+          <label>ملاحظات إضافية<textarea id="orderNotes" rows="3" maxlength="1000" placeholder="أي تفاصيل تحب تضيفها (اختياري)"></textarea></label>
+          <div class="order-total"><span>قيمة الطلب</span><strong id="orderPrice"></strong></div>
+          <button class="btn btn-primary" type="submit" id="submitOrder">إرسال الطلب</button>
+          <div id="orderFeedback" class="order-feedback"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <a class="floating-support" href="https://t.me/Bot_SupportFX" target="_blank" rel="noopener" aria-label="تواصل مع الدعم">✆</a>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
   <script src="products.js"></script>
   <script src="app.js"></script>
 </body>
